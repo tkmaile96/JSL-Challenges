@@ -1,5 +1,6 @@
-const nickname= "Timmy";
-const firstname = "Timothy";
+const nickName= "";
+const firstName = "Timothy";
+const checkName = nickName || firstName;
 
-console.log("Good Morning, ${nickname} || {firstname}!")
+console.log(`Good Morning, ${checkName}!`)
  
