@@ -1,34 +1,39 @@
 //Only change below JS, not the HTML
 
-const 1-root = document(order1),
-const 1-biscuits: document(biscuits),
-const 1-donuts: document(donuts),
-const 1-pancakes: document(pancakes),
-const 1-status: document(status)
+let root1 = document.querySelector('[data-key="order1"]');
+let biscuits1 = root1.getAttribute('data-biscuits');
+let donuts1 = root1.getAttribute('data-donuts');
+let pancakes1= root1.getAttribute('data-pancakes');
+let status1 = root1.getAttribute('data-delivered');
 
-const 2-root = document(order2),
-const 2-biscuits: document(biscuits),
-const 2-donuts: document(donuts),
-const 2-pancakes: document(pancakes),
-const 2-status: document(status)
+let root2 = document.querySelector('[data-key="order2"]');
+let biscuits2= root2.getAttribute('data-biscuits');
+let donuts2= root2.getAttribute('data-donuts');
+let pancakes2= root2.getAttribute('data-pancakes');
+let status2= root2.getAttribute('data-delivered');
 
-const 3-root = document(order3),
-const 3-biscuits: document(biscuits),
-const 3-donuts: document(donuts),
-const 3-pancakes: document(pancakes),
-const 3-status: document(status)
+let root3 = document.querySelector('[data-key="order3"]');
+let biscuits3= root3.getAttribute('data-biscuits');
+let donuts3= root3.getAttribute('data-donuts');
+let pancakes3= root3.getAttribute('data-pancakes');
+let status3= root3.getAttribute('data-delivered');
 
-1-biscuits= 1-root.biscuits,
-1-donuts = 1-root.donuts,
-1-pancakes = 1-root.pancakes,
-1-status = 1-root.status ? Delivered : Pending
+root1.getElementsByClassName('count')[0].textContent = biscuits1
+root1.getElementsByClassName('count')[1].textContent = donuts1
+root1.getElementsByClassName('count')[2].textContent = pancakes1
+let checkStatus1 = status1 === 'true' ? 'Delivered' : 'Pending'
+root1.querySelector('.status dd').textContent = checkStatus1
 
-2-biscuits= 2-root.biscuits,
-2-donuts = 2-root.donuts,
-2-pancakes = 2-root.pancakes,
-2-status = 2-root.status ? Delivered : Pending
+root2.getElementsByClassName('count')[0].textContent = biscuits2
+root2.getElementsByClassName('count')[1].textContent = donuts2
+root2.getElementsByClassName('count')[2].textContent = pancakes2
+let checkStatus2 = status2 === 'true' ? 'Delivered' : 'Pending'
+root2.querySelector('.status dd').textContent = checkStatus2
 
-3-biscuits= 3-root.biscuits,
-3-donuts = 3-root.donuts,
-3-pancakes = 3-root.pancakes,
-3-status = 3-root.status ? Delivered : Pending
+root3.getElementsByClassName('count')[0].textContent = biscuits3
+root3.getElementsByClassName('count')[1].textContent = donuts3
+root3.getElementsByClassName('count')[2].textContent = pancakes3
+let checkStatus3 = status3 ===  'true' ? 'Delivered' : 'Pending'
+root3.querySelector('.status dd').textContent = checkStatus3
+
+
